@@ -1,0 +1,23 @@
+{%extends 'base.html'%}
+{%block title%}Weapons{%endblock%}
+{%block content%}
+<img src="{{url_for('static',filename='images/back.jpg')}}" id="wallpaper">
+<div class="container">
+    <h2 class="greeting">Hello {{session['name']}} ❀</h2>
+        <div class="secondpart">
+            <h2 class="greeting">Add your weapon:</h2>
+            <form method="post" class="addweaponform">
+                <div class="form-group">
+                    <input type="text" name="weapon_name" placeholder="  Name" class="weaponName"><br>
+                    <input type="text" name="price" placeholder="  Price" class="weaponPrice"><br>
+                  </div>
+                <button type="submit" id="addWeaponButton">Add</button>
+                {%with messages = get_flashed_messages(with_categories=true)%}
+                    {%for cat,msg in messages%}
+                        <p class="{{cat}}">{{msg}}</p>
+                    {%endfor%}
+                {%endwith%}
+            </form>
+        </div>
+</div>
+{%endblock%}

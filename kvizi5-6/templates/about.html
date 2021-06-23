@@ -1,0 +1,11 @@
+{%extends 'base.html'%}
+{%block title%}About us{%endblock%}
+{%block content%}
+<img src="{{url_for('static',filename='images/wallpp.jpg')}}" id="aboutwallpaper">
+<center><h3 class="infoAboutSite">Site provides visitors with the opportunity <br> to purchase pneumatic guns at the best prices <br>and publish their weapons for sale !</h3></center>
+<center><h3 class="infofromTable">Most requested weapon at the moment: {{myweapon}}</h3></center>
+<div class="picandbutton">
+    <img src="{{url_for('static',filename='images/steyr.jpg')}}" id="steyrwallpaper">
+    <button id="purchaseButton">Purchase</button>
+</div>
+{%endblock%}

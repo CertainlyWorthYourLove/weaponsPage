@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=Mukta:wght@200&family=Teko:wght@500&family=UnifrakturMaguntia&display=swap');
+#welcome {
+    font-family: 'Mukta', sans-serif;
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 60px;
+    text-shadow: 1px 1px #996599;
+    position: relative;
+    color: #e3e0d5;
+    text-shadow: 1px 1px #996599;
+    letter-spacing: 10px;
+    margin-top: -0.04px;
+
+}
+
+nav{
+    display: block;
+}
+
+body{
+    line-height: 1;
+    margin: 0;
+    background-color: #aba7a7;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top:4%;
+    padding-bottom: 4%;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+/* ############### Nav bar ############## */
+
+nav{
+    width: 100%;
+    margin: 0;
+    box-shadow: #e045a6;
+}
+
+nav ul{
+    background-color: rgb(19, 19, 19);
+    overflow:hidden;
+    margin: 0;
+    padding: 0;
+}
+ul.topnav li{
+    font-family: 'Mukta', sans-serif;
+    font-family: 'UnifrakturMaguntia', cursive;
+    text-shadow: #703f7c;
+    list-style: none;
+    font-size: 21px;
+    float: left;
+}
+ul.topnav li.topnav-right{
+    float: right;
+}
+
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    color: rgb(216, 216, 243);
+
+}
+
+ul.topnav li a:hover{
+    background-color: rgb(64, 65, 81);
+    color: #e3e0d5;
+    transform: scale(1.02);
+}
+ul.topnav li a:active{
+    background-color: #736e6e;
+}
+
+
+ul.topnav li.dropDownIcon{
+    display: none;
+}
+#skullPic {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+
+
+
+/*------------------add weapons page--------------------*/
+body{
+    overflow-x: hidden;
+}
+#wallpaper{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+
+}
+.container {
+    position: relative;
+    display:block;
+    padding: 5px;
+    margin-left:250px;
+}
+h2 {
+    color: whitesmoke;
+    letter-spacing: 4px;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 40px;
+    text-shadow: 1px 1px #bc45dd;
+
+}
+.weaponName,.weaponPrice {
+    width: 300px;
+    height: 50px;
+    margin:10px;
+    border-radius: 25px;
+    outline: none;
+    background-color: #e3d7d7;;
+    border:#736e6e;
+    font-size: 20px;
+    color: #0a0a0a;
+    box-shadow: 1px 1px #813986;
+
+}
+
+.secondpart{
+    display: flex;
+}
+.addweaponform {
+    margin: 10px 15px;
+}
+
+#addWeaponButton {
+    width: 100px;
+    height:40px;
+    margin: 10px 105px;
+    font-size: 18px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    border: #0a0a0a;
+    background-color: #0a0a0a;
+    color: white;
+    box-shadow: 1px 1px #703f7c;
+}
+#addWeaponButton:hover{
+    transform: scale(1.1);
+}
+
+#addWeaponButton:active{
+    background-color: #633964;
+}
+
+.error{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    color: #faf0f0;
+    font-weight: bold;
+    margin: 5px 18px;
+    text-shadow: 1px 1px #c42948;
+}
+
+.info {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    color: #30112d;
+    font-weight: bold;
+    margin: 5px 18px;
+}
+
+/*------------------log in page-------------------*/
+
+#background{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.logInForm{
+    position: relative;
+    display: block;
+    margin: 30px 480px;
+
+}
+
+.greetingLogIn{
+    position: relative;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 1px 1px #ee86ee;
+    letter-spacing: 2px;
+    color:whitesmoke;
+}
+
+.logInInfo {
+    border-radius: 20px;
+    outline: none;
+    margin: 7px;
+    width: 400px;
+    height: 50px;
+    background-color: #ecd8d8;
+    border:#736e6e;
+    font-size: 20px;
+    color: #000000;
+    box-shadow: 1px 1px #d490d4;
+}
+
+#logInButton{
+    background-color: #432743;
+    width: 100px;
+    height:40px;
+    margin: 10px 140px;
+    font-size: 15px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    border: #0a0a0a;
+    background-color: #0a0a0a;
+    color: white;
+    box-shadow: 1px 1px #996599;
+}
+#logInButton:hover{
+    transform: scale(1.1);
+}
+
+#logInButton:active{
+    background-color: #583e58;
+}
+
+
+/*-----------------------log out page-----------------------*/
+#bonesPic{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.goodbyeHeaders{
+    position: relative;
+    color: #e3e0d5;
+    margin: 50px 15px;
+    text-shadow: 1px 1px #996599;
+
+}
+
+/*---------about page-----------*/
+body{
+    overflow:hidden;
+}
+#aboutwallpaper{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.infofromTable {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    margin-top: 60px;
+    padding-top: 10px;
+    margin-top: -30px;
+    word-spacing: 2px;
+    text-shadow: 1px 1px #664b66;
+}
+
+.infoAboutSite {
+    position: relative;
+    font-size: 45px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    margin-top: 30px;
+    padding-top: 10px;
+    letter-spacing: 6px;
+    text-shadow: 1px 1px #885588;
+}
+
+.picandbutton{
+    position: relative;
+    display: flex;
+}
+
+#steyrwallpaper {
+    width: 480px;
+    height: 280px;
+    margin: 10px 250px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #665b66;
+}
+
+#purchaseButton {
+    border-radius: 20px;
+    width: 250px;
+    height: 60px;
+    margin-left: -120px;
+    margin-top: 120px;
+    background-color: #432743;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    border: #0a0a0a;
+    background-color: #0a0a0a;
+    color: white;
+    box-shadow: 1px 1px #674967;
+    letter-spacing: 4px;
+}
+
+#purchaseButton:hover{
+    transform: scale(1.1);
+}
+
+#purchaseButton:active{
+    background-color: #583e58;
+}
+
+
+
+
+
+
+

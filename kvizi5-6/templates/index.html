@@ -1,0 +1,5 @@
+{%extends 'base.html'%}
+{%block content%}
+    <img src="{{url_for('static',filename='images/skull.jpg')}}" id="skullPic">
+    <center><h1 id="welcome">welcome {{session['name']}} </h1></center>
+{%endblock%}

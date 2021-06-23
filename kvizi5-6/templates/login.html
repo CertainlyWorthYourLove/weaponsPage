@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+{%block title%}Log In {%endblock%}
+{%block content%}
+<img src="{{url_for('static',filename='images/wallpaper.jpg')}}" id="background">
+<h1 class="greetingLogIn">★ Welcome to the Log In page ★</h1>
+<form method="post" class="logInForm">
+    <div class="logInDiv">
+        <input type="text" name="username" placeholder="  Username" class="logInInfo"><br>
+        <input type="password" name="password" placeholder="  Password" class="logInInfo"><br>
+    </div>
+    <button type="submit" id="logInButton" onclick="location.href='/'">Log In</button>
+    {%with messages = get_flashed_messages(with_categories=true)%}
+        {%for cat,msg in messages%}
+            <p class="{{cat}}">{{msg}}</p>
+        {%endfor%}
+    {%endwith%}
+
+</form>
+
+{%endblock%}
